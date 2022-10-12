@@ -1,0 +1,48 @@
+{
+	"private": true,
+	"scripts": {
+		"build": "nuxt build",
+		"dev": "nuxt dev",
+		"generate": "nuxt generate",
+		"preview": "nuxt preview",
+		"postinstall": "nuxt prepare"
+	},
+	"devDependencies": {
+		"@nuxtjs/eslint-config-typescript": "^11.0.0",
+		"@nuxtjs/tailwindcss": "^5.3.5",
+		"@vueuse/core": "^9.3.0",
+		"@vueuse/nuxt": "^9.3.0",
+		"eslint": "^8.25.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-nuxt": "^4.0.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"nuxt": "3.0.0-rc.11",
+		"prettier": "^2.7.1",
+		"prettier-plugin-tailwindcss": "^0.1.13"
+	},
+	"prettier": {
+		"useTabs": true,
+		"tabWidth": 4,
+		"semi": true,
+		"singleQuote": true,
+		"printWidth": 120,
+		"bracketSameLine": true,
+		"vueIndentScriptAndStyle": true,
+		"endOfLine": "lf",
+		"plugins": [
+			"prettier-plugin-tailwindcss"
+		]
+	},
+	"eslintConfig": {
+		"env": {
+			"browser": true,
+			"es2021": true,
+			"node": true
+		},
+		"extends": [
+			"@nuxtjs/eslint-config-typescript",
+			"plugin:nuxt/recommended",
+			"plugin:prettier/recommended"
+		]
+	}
+}
